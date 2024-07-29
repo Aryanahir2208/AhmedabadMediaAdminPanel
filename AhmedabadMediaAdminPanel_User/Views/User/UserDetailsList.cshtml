@@ -1,0 +1,100 @@
+﻿@model IEnumerable<AhmedabadMediaAdminPanel_User.Entity.Models.UserDetails>
+
+@{
+    ViewData["Title"] = "User List";
+}
+
+<!-- content -->
+<div class="content container-fluid pt-2" id="SampleRequests">
+    <div class="row">
+        <div class="col">
+            <div class="d-flex justify-content-between mb-4 align-items-center">
+                <span id="message">
+                    <h3>
+                        @if (TempData["Add"] != null)
+                        {
+                            <span style="color:green">@TempData["Add"]</span>
+                        }
+                        @if (TempData["Update"] != null)
+                        {
+                            <span style="color:green">@TempData["Update"]</span>
+                        }
+                        @if (TempData["Delete"] != null)
+                        {
+                            <span style="color:red">@TempData["Delete"]</span>
+                        }
+                    </h3>
+                </span>
+            </div>
+            <div class="collapse mt-4" id="filterModel">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 col-sm-12 mt-2">
+                                <label for="name" class="form-label">Date</label>
+                                <input type="text" name="daterangepicker" class="form-control gridFilterElements">
+                            </div>
+                            <div class="mt-2 text-end">
+                                <button class="btn btn-primary">Search</button>
+                                <button class="btn btn-dark">Clear</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="table-grid">
+                <div id="sampleCollectionRequestOpenTest_Grid">
+                    <div class="table-responsive">
+                        <table class="table table-custom table-lg mb-0" id="products">
+                            <thead>
+                                <tr>
+                                    <td scope="col" class="cursor-pointer table-header text-center">Name</td>
+                                    <td scope="col" class="cursor-pointer table-header text-center">Email</td>
+                                    <td scope="col" class="cursor-pointer table-header text-center">Role</td>
+                                    <td scope="col" class="cursor-pointer table-header text-center">BirthDate</td>
+                                    <td scope="col" class="cursor-pointer table-header text-center">City</td>
+                                    <td scope="col" class="cursor-pointer table-header text-center">State</td>
+                                    <td scope="col" class="cursor-pointer table-header text-center">Address</td>
+                                    <td scope="col" class="cursor-pointer table-header text-center">ContactNo</td>
+                                    <td scope="col" class="cursor-pointer table-header text-center">Action</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var user in Model)
+                                {
+
+                                    <tr>
+                                        <td class="text-center table-data">@user.FirstName @user.LastName</td>
+                                        <td class="text-center table-data">@user.Email</td>
+                                        <td class="text-center table-data">@user.Rolename</td>
+                                        <td class="text-center table-data">@Convert.ToDateTime(@user.BirthDate).ToString("dd-MM-yyyy")</td>
+                                        <td class="text-center table-data">@user.City</td>
+                                        <td class="text-center table-data">@user.State</td>
+                                        <td class="text-center table-data">@user.Address</td>
+                                        <td class="text-center table-data">@user.ContactNo</td>
+                                        <td class="text-center table-data">
+                                            <a asp-controller="User" asp-action="Add" asp-route-UserId="@user.UserId" class="btn btn-sm btn-primary text-white me-1">
+                                                <i class="fa-solid fa-pen"></i>
+                                            </a>
+
+                                            <a asp-controller="User" asp-action="Delete" asp-route-UserId="@user.UserId" onclick="return confirm('Are you sure you want to delete : @user.FirstName @user.LastName')" class="btn btn-sm btn-danger text-white">
+                                                <i class="fa-solid fa-trash-can"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script>
+    setTimeout(function () {
+        $('#message').fadeOut('slow');
+    }, 3600)
+
+</script>

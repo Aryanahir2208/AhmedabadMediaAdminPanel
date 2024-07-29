@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\AhmedabadMediaAdminPanel_User.props" />
+</Project>

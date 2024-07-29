@@ -1,0 +1,17 @@
+D:\Project\Projects\AhmedabadMediaAdminPanel_User.Repository\bin\Debug\net7.0\AhmedabadMediaAdminPanel_User.Repository.deps.json
+D:\Project\Projects\AhmedabadMediaAdminPanel_User.Repository\bin\Debug\net7.0\AhmedabadMediaAdminPanel_User.Repository.dll
+D:\Project\Projects\AhmedabadMediaAdminPanel_User.Repository\bin\Debug\net7.0\AhmedabadMediaAdminPanel_User.Repository.pdb
+D:\Project\Projects\AhmedabadMediaAdminPanel_User.Repository\bin\Debug\net7.0\AhmedabadMediaAdminPanel_User.Entity.dll
+D:\Project\Projects\AhmedabadMediaAdminPanel_User.Repository\bin\Debug\net7.0\AhmedabadMediaAdminPanel_User.Entity.pdb
+D:\Project\Projects\AhmedabadMediaAdminPanel_User.Repository\obj\Debug\net7.0\AhmedabadMediaAdminPanel_User.Repository.csproj.AssemblyReference.cache
+D:\Project\Projects\AhmedabadMediaAdminPanel_User.Repository\obj\Debug\net7.0\AhmedabadMediaAdminPanel_User.Repository.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project\Projects\AhmedabadMediaAdminPanel_User.Repository\obj\Debug\net7.0\AhmedabadMediaAdminPanel_User.Repository.AssemblyInfoInputs.cache
+D:\Project\Projects\AhmedabadMediaAdminPanel_User.Repository\obj\Debug\net7.0\AhmedabadMediaAdminPanel_User.Repository.AssemblyInfo.cs
+D:\Project\Projects\AhmedabadMediaAdminPanel_User.Repository\obj\Debug\net7.0\AhmedabadMediaAdminPanel_User.Repository.csproj.CoreCompileInputs.cache
+D:\Project\Projects\AhmedabadMediaAdminPanel_User.Repository\obj\Debug\net7.0\Ahmedaba.4F259F7E.Up2Date
+D:\Project\Projects\AhmedabadMediaAdminPanel_User.Repository\obj\Debug\net7.0\AhmedabadMediaAdminPanel_User.Repository.dll
+D:\Project\Projects\AhmedabadMediaAdminPanel_User.Repository\obj\Debug\net7.0\refint\AhmedabadMediaAdminPanel_User.Repository.dll
+D:\Project\Projects\AhmedabadMediaAdminPanel_User.Repository\obj\Debug\net7.0\AhmedabadMediaAdminPanel_User.Repository.pdb
+D:\Project\Projects\AhmedabadMediaAdminPanel_User.Repository\obj\Debug\net7.0\ref\AhmedabadMediaAdminPanel_User.Repository.dll
+D:\Project\Projects\AhmedabadMediaAdminPanel_User.Repository\bin\Debug\net7.0\AhmedabadMediaAdminPanel_User.Repository.runtimeconfig.json
+D:\Project\Projects\AhmedabadMediaAdminPanel_User.Repository\obj\Debug\net7.0\AhmedabadMediaAdminPanel_User.Repository.genruntimeconfig.cache

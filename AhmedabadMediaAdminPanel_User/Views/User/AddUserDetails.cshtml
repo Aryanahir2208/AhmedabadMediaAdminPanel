@@ -1,0 +1,136 @@
+﻿@model AhmedabadMediaAdminPanel_User.Entity.Models.UserDetails
+
+
+
+<div class="content container-fluid pt-2" id="SampleRequests">
+    <b>
+        @ViewData["Title1"]
+    </b>
+
+    <div class="row">
+        <div class="col">
+            <section class="card card-body border mb-2">
+                <form id="form1" method="post" asp-controller="User" asp-action="Save">
+                    @Html.HiddenFor(x => x.UserId)
+                    <div class="mb-12 row">
+                        <label for="job-title" class="col-md-2 col-form-label text-md-end">First Name<span class="text-danger">*</span></label>
+                        <div class="col-md-4">
+                            <input type="text" asp-for="FirstName" id="job-title" class="form-control" placeholder="Enter Your First Name">
+                            <span asp-validation-for="FirstName" class="text-danger"></span>
+                            <br />
+                        </div>
+                        <label for="job-title" class="col-md-2 col-form-label text-md-end">Last Name</label>
+                        <div class="col-md-4">
+                            <input type="text" asp-for="LastName" id="job-title" class="form-control" placeholder="Enter Your Last Name">
+                            <br />
+                        </div>
+                    </div>
+                    <div class="mb-12 row">
+                        <label for="job-company" class="col-md-2 col-form-label text-md-end">Email<span class="text-danger">*</span></label>
+                        <div class="col-md-4">
+                            <input type="email" asp-for="Email" id="job-company" class="form-control" placeholder="Enter Your Email">
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                            <br />
+                        </div>
+
+                        <label for="job-avatar" class="col-md-2 col-form-label text-md-end">Contact Number</label>
+                        <div class="col-md-4">
+                            <input type="tel" asp-for="ContactNo" class="form-control" placeholder="Enter Your Contact Number" />
+                            <br />
+                        </div>
+
+                        <label for="job-avatar" class="col-md-2 col-form-label text-md-end">Birthdate<span class="text-danger">*</span></label>
+                        <div class="col-md-4">
+                            <input type="date" asp-for="BirthDate" class="form-control" placeholder="dd-mm-yyyy" />
+                            <span asp-validation-for="BirthDate" class="text-danger"></span>
+                            <br />
+                        </div>
+
+                        <label for="job-avatar" class="col-md-2 col-form-label text-md-end">Role<span class="text-danger">*</span></label>
+                        <div class="col-md-4">
+                            @Html.DropDownListFor(model => model.RoleId, new SelectList(ViewBag.RoleList, "Roleid", "Name"),
+                                     "Select Role", new { @class = "form-control select2", @id = "rolewisemenu" })
+                            <span asp-validation-for="RoleId" class="text-danger"></span>
+                            <div id="badgeContainer"></div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="mb-12 row">
+                        <label for="job-title" class="col-md-2 col-form-label text-md-end">City</label>
+                        <div class="col-md-4">
+                            <input type="text" asp-for="City" id="job-title" class="form-control" placeholder="Enter Your City Name">
+                            <br />
+                        </div>
+                        <label for="job-title" class="col-md-2 col-form-label text-md-end">State</label>
+                        <div class="col-md-4">
+                            <input type="text" asp-for="State" id="job-title" class="form-control" placeholder="Enter Your State Name">
+                            <br />
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="job-location" class="col-md-2 col-form-label text-md-end">Address<span class="text-danger">*</span></label>
+                        <div class="col-md-10">
+                            <input type="text" asp-for="Address" id="job-location" class="form-control" placeholder="Enter Address">
+                            <span asp-validation-for="Address" class="text-danger"></span>
+                            <br />
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                        <button class="btn btn-secondary mx-2" type="submit">Save</button>
+                        <button class="btn btn-outline-secondary mx-2" type="submit" asp-action="UserDetailsList">Cancel</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </div>
+</div>
+
+@section scripts {
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+
+
+        $(document).ready(function () {
+            $('#rolewisemenu').change(function () {
+                var selectedRoleId = $(this).val();
+                if (selectedRoleId != 0) {
+                    $.ajax({
+                        type: "GET",
+                        url: '@Url.Action("RoleWiseMenuDetails", "User")',
+                        data: { roleId: selectedRoleId },
+                        success: function (data) {
+                            if (Array.isArray(data)) {
+                                var badgeContainer = $('#badgeContainer');
+                                badgeContainer.empty();
+                                data.forEach(function (item, index) {
+                                    var menuName = item.menuName;
+                                    console.log(menuName);
+                                    var badge = $('<span>').addClass('badge badge-warning').css({
+                                        'color': 'black',
+                                        'margin-right': '5px',
+                                        'font-size': '12px',
+                                        'margin-top': '10px',
+                                        'margin-bottom': '10px'
+                                    }).text(menuName);
+                                    badgeContainer.append(badge);
+                                });
+                            } else {
+                                console.error("Expected an array but received:", data);
+                            }
+                        },
+                        error: function (xhr, status, error) {
+                            console.error("Error occurred: " + error);
+                        }
+                    });
+                } else {
+                    $('#badgeContainer').empty();
+                }
+            });
+        });
+
+
+    </script>
+}

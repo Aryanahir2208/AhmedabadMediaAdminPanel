@@ -1,0 +1,117 @@
+﻿<div class="menu" id="sidebar-main" style="width: 290px;">
+    <div class="menu-header d-flex justify-content-center">
+        <a asp-controller="Home" asp-action="Index" class="menu-header-logo p-3">
+            <img class="img-fluid h-auto w-auto p-3" src="~/images/Png_UniqueIT-min.png" alt="logo">
+        </a>
+        <a href="#" class="btn btn-sm menu-close-btn">
+            <i class="bi bi-x"></i>
+        </a>
+    </div>
+    <div class="menu-body">
+        <ul>
+            <li>
+                <a asp-controller="Home" asp-action="Index" class="active">
+                    <span class="nav-link-icon">
+                        <i class="bi bi-bar-chart"></i>
+                    </span>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="nav-link-icon">
+                        <i class="bi bi-bar-chart"></i>
+                    </span>
+                    <span>User Details</span>
+                </a>
+                <ul style="display: none;">
+                    <li>
+                        <a asp-controller="User" asp-action="AddUserDetails">
+                            <i class="bi bi-bar-chart fa-sm me-3"></i>
+                            Add User Details
+                        </a>
+                    </li>
+                    <li>
+                        <a asp-controller="User" asp-action="UserDetailsList">
+                            <i class="fa-solid fa-table fa-sm me-3"></i>
+                            <span>User Details List</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="nav-link-icon">
+                        <i class="fa-regular fa-newspaper"></i>
+                    </span>
+                    <span>News</span>
+                </a>
+                <ul style="display: none;">
+                    <li>
+                        <a asp-controller="News" asp-action="AddNews">
+                            <i class="fa-solid fa-file-circle-plus fa-sm me-3"></i>
+                            Add News
+                        </a>
+                    </li>
+                    <li>
+                        <a asp-controller="News" asp-action="NewsList">
+                            <i class="fa-solid fa-table fa-sm me-3"></i>
+                            <span>News List</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a asp-controller="News" asp-action="TopNews">
+                            <i class="fa-solid fa-angles-up fa-sm me-2"></i>
+                            <span>Top News</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="nav-link-icon">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </span>
+                    <span>Jobs</span>
+                </a>
+                <ul style="display: none;">
+                    <li>
+                        <a asp-controller="Job" asp-action="AddJobs">
+                            <i class="fa-solid fa-user-plus fa-sm me-3"></i>
+                            <span>Add Job</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a asp-controller="Job" asp-action="JobList">
+                            <i class="fa-solid fa-table fa-sm me-3"></i>
+                            <span>Job List</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="nav-link-icon">
+                        <i class="fa-solid fa-bullhorn"></i>
+                    </span>
+                    <span>Events</span>
+                </a>
+                <ul style="display: none;">
+                    <li>
+                        <a asp-controller="Events" asp-action="AddEvents">
+                            <i class="fa-regular fa-calendar-plus fa-sm me-3"></i>
+                            <span>Add Event</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a asp-controller="Events" asp-action="EventList">
+                            <i class="fa-solid fa-table fa-sm me-3"></i>
+                            <span>Event List</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+    

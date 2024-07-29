@@ -1,0 +1,14 @@
+D:\Project\Projects\AhmedabadMediaAdminPanel_User.Entity\bin\Debug\net7.0\AhmedabadMediaAdminPanel_User.Entity.deps.json
+D:\Project\Projects\AhmedabadMediaAdminPanel_User.Entity\bin\Debug\net7.0\AhmedabadMediaAdminPanel_User.Entity.dll
+D:\Project\Projects\AhmedabadMediaAdminPanel_User.Entity\bin\Debug\net7.0\AhmedabadMediaAdminPanel_User.Entity.pdb
+D:\Project\Projects\AhmedabadMediaAdminPanel_User.Entity\obj\Debug\net7.0\AhmedabadMediaAdminPanel_User.Entity.csproj.AssemblyReference.cache
+D:\Project\Projects\AhmedabadMediaAdminPanel_User.Entity\obj\Debug\net7.0\AhmedabadMediaAdminPanel_User.Entity.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project\Projects\AhmedabadMediaAdminPanel_User.Entity\obj\Debug\net7.0\AhmedabadMediaAdminPanel_User.Entity.AssemblyInfoInputs.cache
+D:\Project\Projects\AhmedabadMediaAdminPanel_User.Entity\obj\Debug\net7.0\AhmedabadMediaAdminPanel_User.Entity.AssemblyInfo.cs
+D:\Project\Projects\AhmedabadMediaAdminPanel_User.Entity\obj\Debug\net7.0\AhmedabadMediaAdminPanel_User.Entity.csproj.CoreCompileInputs.cache
+D:\Project\Projects\AhmedabadMediaAdminPanel_User.Entity\obj\Debug\net7.0\AhmedabadMediaAdminPanel_User.Entity.dll
+D:\Project\Projects\AhmedabadMediaAdminPanel_User.Entity\obj\Debug\net7.0\refint\AhmedabadMediaAdminPanel_User.Entity.dll
+D:\Project\Projects\AhmedabadMediaAdminPanel_User.Entity\obj\Debug\net7.0\AhmedabadMediaAdminPanel_User.Entity.pdb
+D:\Project\Projects\AhmedabadMediaAdminPanel_User.Entity\obj\Debug\net7.0\ref\AhmedabadMediaAdminPanel_User.Entity.dll
+D:\Project\Projects\AhmedabadMediaAdminPanel_User.Entity\bin\Debug\net7.0\AhmedabadMediaAdminPanel_User.Entity.runtimeconfig.json
+D:\Project\Projects\AhmedabadMediaAdminPanel_User.Entity\obj\Debug\net7.0\AhmedabadMediaAdminPanel_User.Entity.genruntimeconfig.cache
